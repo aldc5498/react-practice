@@ -7,7 +7,16 @@ const Article: React.FC =() => {
   return (
     <>
     <div>
-        <h1>{data.title}</h1>
+      <h3>Movie title</h3>
+        <p>{data.title}</p>
+
+      <h3>Author of the movie:</h3>
+      <p>{data.author}</p>
+
+      <h3>Release date:</h3>
+      <p>{data.date}</p>
+
+
     </div>
     </>
   )
