@@ -48,7 +48,22 @@
                     "title": "Lenovo",
                     "icon": "FaLaptop",
                     "children": [
-                      
+                        {
+                            "id": 21121,
+                            "title": "Legion",
+                            "icon": "FaLaptop",
+                            "children": [
+                              
+                            ]
+                        },
+                        {
+                            "id": 21122,
+                            "title": "Thinkpad",
+                            "icon": "FaLaptop",
+                            "children": [
+                              
+                            ]
+                        }
                     ]
                 },
                 {

@@ -1,8 +1,11 @@
 import React from 'react';
-import {IconType} from 'react-icons';
-import {VStack, Box, Text} from '@chakra-ui/react';
+import {IconType,} from 'react-icons';
+import {VStack, Box, Text, Icon} from '@chakra-ui/react';
 import {ChevronDownIcon , ChevronRightIcon} from '@chakra-ui/icons';
-
+import { AiFillHome } from 'react-icons/ai';
+import { FaBox, FaLaptop, FaMobileAlt, FaTshirt } from 'react-icons/fa';
+import { IoMdSettings } from 'react-icons/io';
+import { MdBuild, MdPerson } from 'react-icons/md';
 
 interface MenuItem{
     id: number;
@@ -10,6 +13,17 @@ interface MenuItem{
     icon: string;
     children: MenuItem[];
 }
+
+const iconMap: { [key: string]: IconType } = {
+    AiFillHome: AiFillHome,
+    FaBox: FaBox,
+    FaLaptop: FaLaptop,
+    FaMobileAlt: FaMobileAlt,
+    FaTshirt: FaTshirt,
+    IoMdSettings: IoMdSettings,
+    MdBuild: MdBuild,
+    MdPerson: MdPerson,
+  };
 
 interface SidebarProps{
     data: MenuItem[];
@@ -22,6 +36,8 @@ const SidebarItem: React.FC<{item: MenuItem}> = ({item}) => {
     const handleToggle = () => {
         setIsOpen((prevOpen) => !prevOpen);
     };
+
+    const iconComponent = iconMap[item.icon];
 
     return (
         <VStack align="start" spacing={1} pl={4}>
@@ -38,7 +54,7 @@ const SidebarItem: React.FC<{item: MenuItem}> = ({item}) => {
                     </Box>
 
                 )}
-                <item.icon />
+               <Icon as={iconComponent}/>
                 <Text ml={2}>{item.title}</Text>
             </Box>
             {isOpen &&
