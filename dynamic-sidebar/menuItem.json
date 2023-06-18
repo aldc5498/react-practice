@@ -1,0 +1,103 @@
+[
+    {
+      "id": 1,
+      "title": "Home",
+      "icon": "AiFillHome",
+      "children": []
+    },
+    {
+      "id": 2,
+      "title": "Products",
+      "icon": "FaBox",
+      "children": [
+        {
+          "id": 21,
+          "title": "Electronics",
+          "icon": "AiFillDesktop",
+          "children": [
+            {
+              "id": 211,
+              "title": "Laptops",
+              "icon": "FaLaptop",
+              "children": [
+                {
+                    "id": 2111,
+                    "title": "Acer",
+                    "icon": "FaLaptop",
+                    "children": [
+                        {
+                            "id": 21111,
+                            "title": "Helios",
+                            "icon": "FaLaptop",
+                            "children": [
+                              
+                            ]
+                        },
+                        {
+                            "id": 21112,
+                            "title": "Nitro",
+                            "icon": "FaLaptop",
+                            "children": [
+                              
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2112,
+                    "title": "Lenovo",
+                    "icon": "FaLaptop",
+                    "children": [
+                      
+                    ]
+                },
+                {
+                    "id": 2113,
+                    "title": "Dell",
+                    "icon": "FaLaptop",
+                    "children": [
+                      
+                    ]
+                }
+
+
+
+              ]
+            },
+            {
+              "id": 212,
+              "title": "Mobile Phones",
+              "icon": "FaMobileAlt",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Clothing",
+          "icon": "FaTshirt",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Settings",
+      "icon": "IoMdSettings",
+      "children": [
+        {
+          "id": 31,
+          "title": "General",
+          "icon": "MdBuild",
+          "children": []
+        },
+        {
+          "id": 32,
+          "title": "Account",
+          "icon": "MdPerson",
+          "children": []
+        }
+      ]
+    }
+  ]
+  
